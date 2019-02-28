@@ -10,9 +10,6 @@ NUM_DICE = 5      # Number of dice in the game
 NUM_ROLLS = 3     # Number of rolls for each test
 NUM_TESTS = 1000  # Number of tests to perform
 
-# ***** Definition of Die object class and methods ***
-
-# DEFINING THE DIE CLASS
 
 class Die():
     def __init__(self, number_of_sides = 0):
