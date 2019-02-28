@@ -1,5 +1,7 @@
 function CubicSpline (X,Y,dx)
-  
+
+% This funtion takes in a list of points and will create a curved line that hits all of these points. 
+
 % Input: X is the list of x points
 %        Y is the list of y points
 %        dx is the derivative at the end points
