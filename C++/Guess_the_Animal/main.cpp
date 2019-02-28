@@ -1,6 +1,9 @@
 /*  Elizabeth Lujan
-	This function is a game that learns as it is used more often. A user will input a animal it guesses and if the program 
-	is not able to guess correctly, it will ask the user for a question to ask for future use 
+	This is a game that learns as it is used more often. A user will input a animal. Based on a series of questions, the program 
+	attempts to guess the animal inputed to the user. If the program is not able to guess correctly, it will ask the user
+	for a question to ask for future use.
+	
+	included is "BinaryNode.h" -- while needed to run the progam I did not create it
 */
 
 #include "BinaryNode.h" // no5 made by me: Courtesy of Prof Adam Carter
