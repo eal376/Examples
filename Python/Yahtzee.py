@@ -1,6 +1,5 @@
-# CS 232 - 04 - eal376
-# Elizabeth Lujan
-# April 18, 2018
+# Made in CS 232 April 2018
+# This program attemps to recreate a game of yatzee
 
 import random
 import collections
