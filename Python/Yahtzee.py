@@ -1,5 +1,6 @@
 # Made in CS 232 April 2018
 # This program attemps to recreate a game of yatzee
+    # The skeltion for this program was provided by David Tuttle
 
 import random
 import collections
@@ -9,9 +10,10 @@ NUM_DICE = 5      # Number of dice in the game
 NUM_ROLLS = 3     # Number of rolls for each test
 NUM_TESTS = 1000  # Number of tests to perform
 
-# ***** Definition of Die object class and methods go here ***
+# ***** Definition of Die object class and methods ***
 
-# PART I - DEFINING THE DIE CLASS
+# DEFINING THE DIE CLASS
+
 class Die():
     def __init__(self, number_of_sides = 0):
         self.sides = number_of_sides
@@ -21,9 +23,6 @@ class Die():
             self.hidden_value = random.randint(1, self.sides)
     def value (self):
         return self.hidden_value
-
-
-# ***** End of Die class definition **************************
 
 # list of Die objects -> boolean
 # expects a list of Die objects
@@ -69,7 +68,7 @@ def best_value_to_keep(the_dice):
     # value_to_keep is now the most commonly found value on the dice
     return value_to_keep
 
-# *************** play_yahtzee code goes here ********************
+# *************** play_yahtzee ********************
 
 # list of Die objects -> boolean
 # expects a list of Die objects
@@ -81,10 +80,7 @@ def best_value_to_keep(the_dice):
 #     (by calling print_dice(the_dice)) after each roll,
 #     and a single-line "Yahtzee" or "No Yahtzee" message at the end
 
-# PART II - Writing the play_yahtzee function goes here
-
-
-
+# play_yahtzee function goes here
 def play_yahtzee(the_dice):
 
     for i in the_dice:
@@ -103,15 +99,8 @@ def play_yahtzee(the_dice):
 
     print ("No Yaztee")
     return result
-        
 
-
-
-# *************** end play_yahtzee code **************************
-
-# *** The "main" code to run play_yahtzee() NUM_TIMES times goes here ***
-
-# PART III - Code to run play_yahtzee multiple times goes here
+# Code to run play_yahtzee multiple times goes here
 my_dice = []
 for i in range (0,NUM_DICE):
     c= Die(NUM_SIDES)
@@ -129,13 +118,6 @@ print ("Out of {}, we got {} yahtzees! ".format (NUM_TESTS, wins))
 print ("Success rate is : {0:5.2f}%".format(win_percent))
 
 
-# Now, write a loop to call play_yahtzee(my_dice) NUM_TIMES times.
-# Use a local variable to keep track of the
-# number of Yahtzees that occur, and compute the percentage of
-# tests the resulted in a Yahtzee.  Print the number of tests,
-# the number of Yahtzees, and the percentage of success
-# to the screen in an easy to read and understand manner
 
 
 
-# *** End of "main" code ***
